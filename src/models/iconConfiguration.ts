@@ -1,6 +1,7 @@
 import { IconJsonOptions } from './';
 
 export class IconConfiguration {
+  fonts?: object[];
   file?: string;
   folder?: string;
   folderExpanded?: string;
@@ -18,6 +19,33 @@ export class IconConfiguration {
   hidesExplorerArrows?: boolean;
 
   constructor() {
+    const fontsConfiguration = [
+      {
+        id: 'jetbrains-mono-nerd-font',
+        src: [
+          {
+            path: './../fonts/jetbrains-mono-nl-nerdfont-mono.woff',
+            format: 'woff',
+          },
+        ],
+        weight: 'normal',
+        style: 'normal',
+        size: '100%',
+      },
+      {
+        id: 'fira-cod-nerd-font',
+        src: [
+          {
+            path: './../fonts/fira-code-nerd-font-regular.woff',
+            format: 'woff',
+          },
+        ],
+        weight: 'normal',
+        style: 'normal',
+        size: '100%',
+      },
+    ];
+    this.fonts = fontsConfiguration;
     this.iconDefinitions = {};
     this.folderNames = {};
     this.folderNamesExpanded = {};

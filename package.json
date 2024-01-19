@@ -1,8 +1,8 @@
 {
-  "name": "material-icon-theme",
-  "displayName": "Material Icon Theme",
-  "description": "Material Design Icons for Visual Studio Code",
-  "version": "4.33.0",
+  "name": "material-icon-theme-with-jb-nf",
+  "displayName": "Material Icon Theme with Jetbrains Mono Nerd Font",
+  "description": "Material Design Icons for Visual Studio Code and with Jetbrains Mono Nerd Font",
+  "version": "4.33.1",
   "scripts": {
     "build": "npm run compile:dev && npm run generateJson",
     "check": "ts-node ./src/scripts/icons/checks",
@@ -25,11 +25,10 @@
     "version": "npm run changelog && git add CHANGELOG.md",
     "vscode:prepublish": "npm run lint && npm run compile && npm run package-web"
   },
-  "publisher": "PKief",
+  "publisher": "fowind",
   "author": {
-    "name": "Philipp Kief",
-    "email": "philipp.kief@gmx.de",
-    "url": "https://pkief.github.io"
+    "name": "fowind",
+    "email": "fowindee@gmail.com"
   },
   "funding": "https://github.com/sponsors/PKief",
   "sponsor": {
